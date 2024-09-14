@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Todo List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a Todo List application built with React. It allows users to create, view, update, and delete tasks. Users can also register and log in to manage their tasks securely.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+- **User Authentication:** Register and log in to manage your tasks.
+- **Todo Management:** Add, edit, delete, and mark tasks as completed.
+- **Responsive Design:** Works well on both desktop and mobile devices.
+- **Client-Side Routing:** Navigate between different pages without refreshing.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Home Page
 
-### `yarn test`
+![image](https://github.com/user-attachments/assets/1f41622e-f2f3-453a-aaee-97c00656d239)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Registration Page
 
-### `yarn build`
+![image](https://github.com/user-attachments/assets/eb77bd35-a610-4f06-b330-76201655f2cc)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Login Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](https://github.com/user-attachments/assets/1f41622e-f2f3-453a-aaee-97c00656d239)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Todo List
 
-### `yarn eject`
+![image](https://github.com/user-attachments/assets/e52b66b7-6023-4324-8ca0-68740996bfd6)
+![image](https://github.com/user-attachments/assets/c7686807-3e72-4eed-addf-8a824b904341)
+![image](https://github.com/user-attachments/assets/7df78359-fe7c-48ce-9aa7-76ab98ed4ca0)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Frontend:** React, React Router, Material-UI
+- **State Management:** React Context API
+- **Form Handling:** Formik, Yup
+- **Styling:** CSS-in-JS with Material-UI
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/NelushGayashan/TODO_List_App.git
+    ````
+2. **Navigate to the Project Directory:**
+    ```bash
+    cd TODO_List_App
+   ````
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Install Dependencies:**
+    ```bash
+    yarn install
+   ````
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Start the Development Server:**
+    ```bash
+    yarn start
+   ````
 
-### Code Splitting
+The app will be available at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+- **Registration:** Navigate to `/register` to create a new account.
+- **Login:** Navigate to `/login` to access your account.
+- **Todo List:** After logging in, you can manage your todos on the main page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Folder Structure
+    ```bash
+    src/
+    │
+    ├── components/            # React components
+    │   ├── Auth/               # Authentication related components (Login, Register)
+    │   │   ├── Login.js
+    │   │   └── Register.js
+    │   └── Todo/               # Todo list related components (TodoList, AddTodo)
+    │       ├── AddTodo.js
+    │       ├── EditTodo.js
+    │       ├── TodoItem.js
+    │       └── TodoList.js
+    │
+    ├── context/                # React Context providers (AuthContext, TodoContext)
+    │   ├── AuthContext.js               
+    │   └── TodoContext.js
+    ├── App.css                 # Global CSS styles
+    ├── App.js                  # Main application file
+    ├── index.js                # Entry point for the application
+    └── setupTests.js           # Setup file for tests
+    ````
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributing
 
-### Advanced Configuration
+If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgements
 
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React and Material-UI for the frontend framework and styling.
+- Formik and Yup for form handling and validation.
+- React Router for client-side routing.
