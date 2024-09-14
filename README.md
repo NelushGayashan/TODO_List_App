@@ -70,7 +70,7 @@ The app will be available at http://localhost:3000.
 
 
 ## Folder Structure
-    ```bash
+    ```plaintext
     src/
     │
     ├── components/            # React components
