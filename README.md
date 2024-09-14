@@ -88,7 +88,8 @@ src/
 │   ├── AuthContext.js               
 │   └── TodoContext.js
 ├── App.css                 # Global CSS styles
-├── App.js                  # Main application file
+└── App.js                  # Main application file
+
 ```
 
 ## Contributing
