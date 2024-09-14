@@ -70,27 +70,26 @@ The app will be available at http://localhost:3000.
 
 
 ## Folder Structure
-    ```plaintext
-    src/
-    │
-    ├── components/            # React components
-    │   ├── Auth/               # Authentication related components (Login, Register)
-    │   │   ├── Login.js
-    │   │   └── Register.js
-    │   └── Todo/               # Todo list related components (TodoList, AddTodo)
-    │       ├── AddTodo.js
-    │       ├── EditTodo.js
-    │       ├── TodoItem.js
-    │       └── TodoList.js
-    │
-    ├── context/                # React Context providers (AuthContext, TodoContext)
-    │   ├── AuthContext.js               
-    │   └── TodoContext.js
-    ├── App.css                 # Global CSS styles
-    ├── App.js                  # Main application file
-    ├── index.js                # Entry point for the application
-    └── setupTests.js           # Setup file for tests
-    ````
+
+```plaintext
+src/
+│
+├── components/            # React components
+│   ├── Auth/               # Authentication related components (Login, Register)
+│   │   ├── Login.js
+│   │   └── Register.js
+│   └── Todo/               # Todo list related components (TodoList, AddTodo)
+│       ├── AddTodo.js
+│       ├── EditTodo.js
+│       ├── TodoItem.js
+│       └── TodoList.js
+│
+├── context/                # React Context providers (AuthContext, TodoContext)
+│   ├── AuthContext.js               
+│   └── TodoContext.js
+├── App.css                 # Global CSS styles
+├── App.js                  # Main application file
+```
 
 ## Contributing
 
