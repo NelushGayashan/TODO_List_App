@@ -1,3 +1,4 @@
+// src/App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -37,7 +38,7 @@ const App = () => {
             flexDirection: 'column',
             minHeight: '100vh',
             justifyContent: 'space-between',
-            backgroundColor: '#fafafa', // Enhanced background color
+            backgroundColor: '#fafafa',
             fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
           }}
         >
@@ -51,7 +52,7 @@ const App = () => {
             pauseOnFocusLoss
             draggable
             pauseOnHover
-            theme="colored" // Theme customization for better visuals
+            theme="colored"
           />
           <Box component="header" sx={{ p: 3, borderBottom: '1px solid #e0e0e0', bgcolor: '#ffffff' }}>
             <Typography variant="h2" gutterBottom>

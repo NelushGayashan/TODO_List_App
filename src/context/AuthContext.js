@@ -6,18 +6,24 @@ const AuthContext = createContext();
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  // Mock register function
   const register = async (userData) => {
     try {
-      // Simulate a successful registration by setting the user data
       setUser(userData);
-      return Promise.resolve(); // Simulate successful registration
+      return Promise.resolve();
     } catch (error) {
-      return Promise.reject(error); // Simulate registration failure
+      return Promise.reject(error);
     }
   };
 
-  const login = (userData) => setUser(userData);
+  const login = async (userData) => {
+    try {
+      setUser(userData);
+      return Promise.resolve(); 
+    } catch (error) {
+      return Promise.reject(error);
+    }
+  };
+
   const logout = () => setUser(null);
 
   return (

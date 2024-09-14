@@ -38,7 +38,7 @@ const Register = () => {
               try {
                 await register(values); 
                 toast.success('Registration Successful!');
-                navigate('/login'); 
+                navigate('/todos'); 
               } catch (error) {
                 console.error('Registration Error:', error); 
                 toast.error('Registration failed. Please try again.');

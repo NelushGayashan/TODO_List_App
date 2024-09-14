@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const TodoItem = ({ todo, onDelete, onToggle }) => {
   const handleDelete = async () => {
     try {
-      await onDelete(todo.id); // Assuming onDelete is async
+      await onDelete(todo.id); 
       toast.success('Todo deleted successfully!');
     } catch (error) {
       toast.error('Failed to delete todo.');
