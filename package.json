@@ -21,7 +21,6 @@
     "yup": "^1.4.0"
   },
   "scripts": {
-    "build-css": "postcss src/styles/*.css --use autoprefixer -d dist/styles",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
