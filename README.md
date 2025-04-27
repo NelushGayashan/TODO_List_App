@@ -4,6 +4,11 @@
 
 This is a Todo List application built with React. It allows users to create, view, update, and delete tasks. Users can also register and log in to manage their tasks securely.
 
+## 🚀 Live Demo
+
+Check out the live version here:  
+👉 [https://smartloancalculator.netlify.app/](https://todolistappfe.netlify.app/)
+
 ## Features
 
 - **User Authentication:** Register and log in to manage your tasks.
